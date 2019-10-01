@@ -1,0 +1,23 @@
+using System;
+
+namespace ProAgil.Dominio.Model
+{
+	public class Lote
+	{
+		public int LoteId { get; set; }
+
+		public string Nome { get; set; }
+
+		public decimal Preco { get; set; }
+
+		public DateTime? DataInicio	 { get; set; }
+
+		public DateTime? DataFim { get; set; }
+
+		public int Quantidade { get; set; }
+
+		public int EventoId { get; set; }
+
+		public Evento Evento { get;  }
+	}
+}

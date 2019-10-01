@@ -1,0 +1,24 @@
+<div class="row" >
+    <div class="col-md-12" text-align="center">
+        
+        <p> {{ name }} </p>
+    </div>    
+    <div class="col-md-4">
+        Formulário:
+    </div>
+    <div class="col-md-8">
+        {{ form.value | json }}
+    </div>    
+    <div class="col-md-4">
+        Erros:
+    </div>
+    <div class="col-md-8">
+        {{ form.errors | json }}
+    </div>    
+    <div class="col-md-4">
+        Status:
+    </div>
+    <div class="col-md-8">
+        {{ form.valid | json }}
+    </div>    
+</div>
